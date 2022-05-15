@@ -21,7 +21,13 @@ public class MainController {
     private Button UserButton;
 
     @FXML
-    void onAdminButtonClicked(MouseEvent event) {
+    void onAdminButtonClicked(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("FXMLFiles/admin-login-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        //Node node = (Node) event.getSource();
+        Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
 
     }
 

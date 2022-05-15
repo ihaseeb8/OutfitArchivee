@@ -1,25 +1,23 @@
 package com.example.outfitarchivee.Classes;
 
-public class User {
+public class Admin {
 
     private long phoneNo;
     private String name;
     private String email;
-    private String address;
     private String password;
 
-    private static User user = new User();
+    private static Admin admin = new Admin();
 
-    private User(){
+    private Admin(){
         name = null;
-        phoneNo = 0;
         email = null;
-        address = null;
+        phoneNo = 0;
         password = null;
     }
 
-    public static User getUser(){
-        return user;
+    public static Admin getAdmin(){
+        return admin;
     }
 
     public String getName() {
@@ -36,12 +34,6 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public void setAddress(String address) {this.address = address;}
-
-    public String getAddress() {
-        return address;
     }
 
     public void setPhoneNo(long phoneNo) {

@@ -74,6 +74,59 @@ public class DBConnection {
         return  false;
     }
 
+    public boolean getAdmin(long phNo){
+
+        try
+        {
+            //step1 load the driver class
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            System.out.println("Driver Loaded Successfully!");
+            //step2 create  the connection object
+            Connection con=DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/mysql","root","tiger");
+
+            System.out.println("Connection Established!");
+
+            String sql = "SELECT * FROM ap.oaadmins WHERE phoneNo = ?";
+
+            PreparedStatement statement = con.prepareStatement(sql);
+
+            String phoneNo = String.valueOf(phNo);
+
+            statement.setString(1, phoneNo);
+
+            ResultSet rs = statement.executeQuery();
+
+            while(rs.next())
+            {
+
+                Admin.getAdmin().setPhoneNo( Long.parseLong(rs.getString("phoneNo"))); // by column name matchin
+                Admin.getAdmin().setName(rs.getString("name"));
+                Admin.getAdmin().setEmail(rs.getString("email"));
+                Admin.getAdmin().setPassword(rs.getString("password"));
+
+                if( Long.parseLong(rs.getString("phoneNo")) == phNo ) {
+                    return true;
+                }
+
+            }
+            con.close();
+
+        }
+        catch(ClassNotFoundException e){
+
+            System.out.println("Driver Not Loaded");
+            return false;
+
+        } catch (SQLException e) {
+
+            System.out.println("Connection is not Established!" + e.getMessage());
+            return false;
+        }
+
+        return  false;
+    }
+
     public boolean getUser(long phNo){
 
         try
