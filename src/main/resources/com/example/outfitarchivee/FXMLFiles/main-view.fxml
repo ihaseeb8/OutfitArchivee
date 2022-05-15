@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.outfitarchivee.Controllers.MainController">
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="600.0" fitWidth="850.0" layoutX="-1.0" pickOnBounds="true">
+                    <image>
+                        <Image url="@../Pictures/sda.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="442.0" fitWidth="460.0" layoutX="203.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Pictures/logoblack.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="AdminButton" layoutX="259.0" layoutY="396.0" mnemonicParsing="false" onMouseClicked="#onAdminButtonClicked" onMouseEntered="#onAdminButtonMM" onMouseExited="#onAdminButtonME" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #212121;" text="Admin" textFill="WHITE">
+                    <font>
+                        <Font name="Franklin Gothic Medium Italic" size="17.0" />
+                    </font>
+                </Button>
+            <Button fx:id="UserButton" layoutX="469.0" layoutY="396.0" mnemonicParsing="false" onMouseClicked="#onUserButtonClicked" onMouseEntered="#onUserButtonMM" onMouseExited="#onUserButtonME" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #212121;" text="User" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Medium Italic" size="17.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

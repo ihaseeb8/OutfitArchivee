@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.outfitarchivee.Controllers.UserSignUpViewController">
+    <left>
+        <AnchorPane prefHeight="599.0" prefWidth="423.0" style="-fx-background-color: #212121;" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="BackButton" layoutX="155.0" layoutY="490.0" mnemonicParsing="false" onMouseClicked="#onBackButtonClicked" onMouseEntered="#onBackButtonMM" onMouseExited="#onBackButtonME" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #FFFFFF;" text="Back" textFill="#212121">
+                    <font>
+                        <Font name="Franklin Gothic Medium Italic" size="17.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="376.0" fitWidth="336.0" layoutX="44.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Pictures/logowhite.png" />
+                    </image>
+                </ImageView>
+                <Text fill="WHITE" fontSmoothingType="LCD" layoutX="121.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Glad to see you !" wrappingWidth="199.2991943359375">
+                    <font>
+                        <Font name="Segoe Script" size="22.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+    </left>
+   <right>
+        <AnchorPane prefHeight="599.0" prefWidth="439.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+            <children>
+                <Text layoutX="146.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Account" wrappingWidth="126.93663024902344">
+                    <font>
+                        <Font name="Segoe UI Symbol" size="18.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="PhoneNoField" layoutX="94.0" layoutY="180.0" prefHeight="34.0" prefWidth="230.0" promptText="Mobile No" style="-fx-background-color: #212121; -fx-text-fill: #FFFFFF;">
+                    <font>
+                        <Font size="14.0" />
+                    </font></TextField>
+                <PasswordField fx:id="passwordField" layoutX="96.0" layoutY="409.0" prefHeight="34.0" prefWidth="226.0" promptText="Password" style="-fx-background-color: #212121; -fx-text-fill: #FFFFFF;" />
+                <Text fx:id="promptText" fill="#b11e1e" layoutX="116.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="186.13670349121094" />
+                <Button fx:id="SignUpButton" layoutX="143.0" layoutY="492.0" mnemonicParsing="false" onMouseClicked="#onSignUpButtonClicked" onMouseEntered="#onSignUpButtonMM" onMouseExited="#onSignUpButtonME" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #212121;" text="Sign Up" textFill="WHITE">
+                    <font>
+                        <Font name="Franklin Gothic Medium Italic" size="17.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="35.0" fitWidth="51.0" layoutX="41.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Icons/smartphone.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="41.0" fitWidth="37.0" layoutX="41.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Icons/email.png" />
+                    </image>
+                </ImageView>
+            <TextField fx:id="EmailField" layoutX="94.0" layoutY="238.0" prefHeight="34.0" prefWidth="230.0" promptText="Email" style="-fx-background-color: #212121; -fx-text-fill: #FFFFFF;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="NameField" layoutX="94.0" layoutY="120.0" prefHeight="34.0" prefWidth="230.0" promptText="Name" style="-fx-background-color: #212121; -fx-text-fill: #FFFFFF;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="35.0" fitWidth="51.0" layoutX="41.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="58.0" layoutX="41.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/lock.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="AddressField" alignment="TOP_LEFT" layoutX="94.0" layoutY="301.0" prefHeight="87.0" prefWidth="230.0" promptText="Address" style="-fx-background-color: #212121; -fx-text-fill: #FFFFFF;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="41.0" fitWidth="37.0" layoutX="41.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/home-address.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+   </right>
+</BorderPane>

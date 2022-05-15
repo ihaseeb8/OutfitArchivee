@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.outfitarchivee.Controllers.UserLoginViewController">
+    <left>
+        <AnchorPane prefHeight="599.0" prefWidth="423.0" style="-fx-background-color: #212121;" BorderPane.alignment="CENTER">
+            <children>
+            <Button fx:id="BackButton" layoutX="155.0" layoutY="490.0" mnemonicParsing="false" onMouseClicked="#onBackButtonClicked" onMouseEntered="#onBackButtonMM" onMouseExited="#onBackButtonME" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #FFFFFF;" text="Back" textFill="#212121">
+               <font>
+                  <Font name="Franklin Gothic Medium Italic" size="17.0" />
+               </font>
+            </Button>
+                <ImageView fitHeight="376.0" fitWidth="336.0" layoutX="44.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Pictures/logowhite.png" />
+                    </image>
+                </ImageView>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="121.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Back !" wrappingWidth="199.2991943359375">
+               <font>
+                  <Font name="Segoe Script" size="22.0" />
+               </font>
+            </Text>
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="599.0" prefWidth="439.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+            <children>
+                <Text layoutX="122.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log in to your Account" wrappingWidth="183.7366180419922">
+                    <font>
+                        <Font name="Segoe UI Symbol" size="18.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="PhoneNoField" layoutX="98.0" layoutY="215.0" prefHeight="34.0" prefWidth="230.0" promptText="0300XXXXXXX" style="-fx-background-color: #212121; -fx-text-fill: #FFFFFF;">
+                    <font>
+                        <Font size="14.0" />
+                    </font></TextField>
+                <PasswordField fx:id="passwordField" layoutX="100.0" layoutY="300.0" prefHeight="34.0" prefWidth="226.0" promptText="*******" style="-fx-background-color: #212121; -fx-text-fill: #FFFFFF;" />
+                <Text fx:id="promptText" fill="#b11e1e" layoutX="118.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="190.93663024902344" />
+            <Button fx:id="LoginButton" layoutX="158.0" layoutY="491.0" mnemonicParsing="false" onMouseClicked="#onLoginButtonClicked" onMouseEntered="#onLoginButtonMM" onMouseExited="#onLoginButtonME" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #212121;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Medium Italic" size="17.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="35.0" fitWidth="51.0" layoutX="41.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/smartphone.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="58.0" layoutX="41.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/lock.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
