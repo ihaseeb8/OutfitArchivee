@@ -1,15 +1,20 @@
 package com.example.outfitarchivee.Controllers;
 
+import com.example.outfitarchivee.Classes.Product;
+import com.example.outfitarchivee.Classes.ShoppingCart;
 import com.example.outfitarchivee.Classes.User;
 import com.example.outfitarchivee.DBHandlers.DBConnection;
 import com.example.outfitarchivee.HelloApplication;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Paint;
@@ -17,10 +22,12 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 import static java.lang.Integer.parseInt;
 
-public class UserLoginViewController {
+public class UserLoginViewController implements Initializable {
 
     @FXML
     private Button BackButton;
@@ -133,4 +140,10 @@ public class UserLoginViewController {
         LoginButton.setStyle("-fx-background-color: #455A64");
     }
 
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        PhoneNoField.setText("03159825999");
+        passwordField.setText("2042");
+    }
 }

@@ -27,12 +27,13 @@
     <loaded-nodes>
       <connection connection-id="6d9dbeac-e24e-4ea6-aefd-2f231f940632">
         <schema name="ap" object-types="table, view, procedure, function, constraint, index, column, dataset trigger" />
+        <schema name="mysql" object-types="table, view, function" />
       </connection>
     </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="6d9dbeac-e24e-4ea6-aefd-2f231f940632">
-      <console name="Connection" type="STANDARD" schema="mysql" session="Main" />
+      <console name="Connection" type="STANDARD" schema="mysql" session="Main"><![CDATA[select * from ap.oaorders ;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">

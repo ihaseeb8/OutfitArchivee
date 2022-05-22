@@ -1,16 +1,23 @@
 package com.example.outfitarchivee.Controllers;
 
 import com.example.outfitarchivee.HelloApplication;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 public class AdminViewController {
 
@@ -33,21 +40,24 @@ public class AdminViewController {
     private Button RPButton;
 
     @FXML
-    private Button SIButton;
+    private BorderPane mainPane;
 
     @FXML
-    void AIButtonClicked(MouseEvent event) {
-
+    void AIButtonClicked(MouseEvent event) throws IOException {
+        Pane view1 = new FXMLLoader().load(HelloApplication.class.getResource("FXMLFiles/admin-ai-view.fxml"));
+        mainPane.setCenter(view1);
     }
 
     @FXML
-    void AOButtonClicked(MouseEvent event) {
-
+    void AOButtonClicked(MouseEvent event) throws IOException {
+        Pane view1 = new FXMLLoader().load(HelloApplication.class.getResource("FXMLFiles/admin-ao-view.fxml"));
+        mainPane.setCenter(view1);
     }
 
     @FXML
-    void APButtonClicked(MouseEvent event) {
-
+    void APButtonClicked(MouseEvent event) throws IOException {
+        Pane view1 = new FXMLLoader().load(HelloApplication.class.getResource("FXMLFiles/admin-ap-view.fxml"));
+        mainPane.setCenter(view1);
     }
 
     @FXML
@@ -67,18 +77,15 @@ public class AdminViewController {
     }
 
     @FXML
-    void POButtonClicked(MouseEvent event) {
-
+    void POButtonClicked(MouseEvent event) throws IOException {
+        Pane view1 = new FXMLLoader().load(HelloApplication.class.getResource("FXMLFiles/admin-po-view.fxml"));
+        mainPane.setCenter(view1);
     }
 
     @FXML
-    void RPButtonClicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void SIButtonClicked(MouseEvent event) {
-
+    void RPButtonClicked(MouseEvent event) throws IOException {
+        Pane view1 = new FXMLLoader().load(HelloApplication.class.getResource("FXMLFiles/admin-rp-view.fxml"));
+        mainPane.setCenter(view1);
     }
 
     @FXML
@@ -145,18 +152,6 @@ public class AdminViewController {
     void onRPButtonMM(MouseEvent event) {
         RPButton.setStyle("-fx-background-color: #212121");
         RPButton.setTextFill(Paint.valueOf("#FFFFFF"));
-    }
-
-    @FXML
-    void onSIButtonME(MouseEvent event) {
-        SIButton.setStyle("-fx-background-color: #FFFFFF");
-        SIButton.setTextFill(Paint.valueOf("#212121"));
-    }
-
-    @FXML
-    void onSIButtonMM(MouseEvent event) {
-        SIButton.setStyle("-fx-background-color: #212121");
-        SIButton.setTextFill(Paint.valueOf("#FFFFFF"));
     }
 
 }

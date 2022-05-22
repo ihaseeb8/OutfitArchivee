@@ -15,4 +15,5 @@ module com.example.outfitarchivee {
     exports com.example.outfitarchivee;
     exports com.example.outfitarchivee.Controllers;
     opens com.example.outfitarchivee.Controllers to javafx.fxml;
+    opens com.example.outfitarchivee.Classes to javafx.base;
 }

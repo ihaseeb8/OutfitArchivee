@@ -1,5 +1,8 @@
 package com.example.outfitarchivee.Classes;
 
+import com.example.outfitarchivee.DBHandlers.DBConnection;
+import javafx.collections.ObservableList;
+
 public class User {
 
     private long phoneNo;
@@ -7,6 +10,7 @@ public class User {
     private String email;
     private String address;
     private String password;
+    private ObservableList<Order> orders;
 
     private static User user = new User();
 
@@ -16,6 +20,16 @@ public class User {
         email = null;
         address = null;
         password = null;
+        orders = null;
+    }
+
+    public ObservableList<Order> getOrders(){
+        orders = DBConnection.getDBConnection().getOrders();
+        return orders;
+    }
+
+    public long getPhoneNo() {
+        return phoneNo;
     }
 
     public static User getUser(){

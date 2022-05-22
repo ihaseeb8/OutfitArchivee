@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="610.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.outfitarchivee.Controllers.UserPODViewController">
+    <children>
+        <Text layoutX="224.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Your Orders Here" wrappingWidth="166.548583984375">
+            <font>
+                <Font name="Century Gothic Bold Italic" size="17.0" />
+            </font>
+        </Text>
+      <TableView fx:id="OrdersTable" layoutX="15.0" layoutY="63.0" prefHeight="522.0" prefWidth="586.0" style="-fx-background-color: #BDBDBD; -fx-background-radius: 10;">
+         <columns>
+            <TableColumn fx:id="IdCol" editable="false" prefWidth="100.79998779296875" sortable="false" text="Order Id" />
+            <TableColumn fx:id="PhoneCol" editable="false" text="Phone No" visible="false" />
+            <TableColumn fx:id="BillCol" editable="false" prefWidth="123.20001220703125" sortable="false" text="Total Bill" />
+            <TableColumn fx:id="StatusCol" editable="false" prefWidth="63.199951171875" sortable="false" text="Status" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+    </children>
+</AnchorPane>

@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.outfitarchivee.Controllers.AdminViewController">
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.outfitarchivee.Controllers.AdminViewController">
     <left>
         <AnchorPane prefHeight="600.0" prefWidth="169.0" style="-fx-background-color: #212121;" BorderPane.alignment="CENTER">
             <children>
@@ -32,27 +32,22 @@
                   <Font name="Franklin Gothic Medium Italic" size="17.0" />
                </font>
             </Button>
-            <Button fx:id="SIButton" layoutX="3.0" layoutY="247.0" mnemonicParsing="false" onMouseClicked="#SIButtonClicked" onMouseEntered="#onSIButtonMM" onMouseExited="#onSIButtonME" prefHeight="44.0" prefWidth="217.0" style="-fx-background-color: #FFFFFF;" text="Store Information" textFill="#212121">
+            <Button fx:id="APButton" layoutX="3.0" layoutY="256.0" mnemonicParsing="false" onMouseClicked="#APButtonClicked" onMouseEntered="#onAPButtonMM" onMouseExited="#APButtonME" prefHeight="44.0" prefWidth="217.0" style="-fx-background-color: #FFFFFF;" text="Add Product" textFill="#212121">
                <font>
                   <Font name="Franklin Gothic Medium Italic" size="17.0" />
                </font>
             </Button>
-            <Button fx:id="APButton" layoutX="3.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#APButtonClicked" onMouseEntered="#onAPButtonMM" onMouseExited="#APButtonME" prefHeight="44.0" prefWidth="217.0" style="-fx-background-color: #FFFFFF;" text="Add Product" textFill="#212121">
+            <Button fx:id="RPButton" layoutX="3.0" layoutY="318.0" mnemonicParsing="false" onMouseClicked="#RPButtonClicked" onMouseEntered="#onRPButtonMM" onMouseExited="#onRPButtonME" prefHeight="44.0" prefWidth="217.0" style="-fx-background-color: #FFFFFF;" text="Remove Product" textFill="#212121">
                <font>
                   <Font name="Franklin Gothic Medium Italic" size="17.0" />
                </font>
             </Button>
-            <Button fx:id="RPButton" layoutX="3.0" layoutY="352.0" mnemonicParsing="false" onMouseClicked="#RPButtonClicked" onMouseEntered="#onRPButtonMM" onMouseExited="#onRPButtonME" prefHeight="44.0" prefWidth="217.0" style="-fx-background-color: #FFFFFF;" text="Remove Product" textFill="#212121">
+            <Button fx:id="POButton" layoutX="3.0" layoutY="381.0" mnemonicParsing="false" onMouseClicked="#POButtonClicked" onMouseEntered="#onPOButtonMM" onMouseExited="#onPOButtonME" prefHeight="44.0" prefWidth="217.0" style="-fx-background-color: #FFFFFF;" text="Pending Orders" textFill="#212121">
                <font>
                   <Font name="Franklin Gothic Medium Italic" size="17.0" />
                </font>
             </Button>
-            <Button fx:id="POButton" layoutX="3.0" layoutY="404.0" mnemonicParsing="false" onMouseClicked="#POButtonClicked" onMouseEntered="#onPOButtonMM" onMouseExited="#onPOButtonME" prefHeight="44.0" prefWidth="217.0" style="-fx-background-color: #FFFFFF;" text="Pending Orders" textFill="#212121">
-               <font>
-                  <Font name="Franklin Gothic Medium Italic" size="17.0" />
-               </font>
-            </Button>
-            <Button fx:id="AOButton" layoutX="3.0" layoutY="457.0" mnemonicParsing="false" onMouseClicked="#AOButtonClicked" onMouseEntered="#onAOButtonMM" onMouseExited="#onAOButtonME" prefHeight="44.0" prefWidth="217.0" style="-fx-background-color: #FFFFFF;" text="All Orders" textFill="#212121">
+            <Button fx:id="AOButton" layoutX="3.0" layoutY="446.0" mnemonicParsing="false" onMouseClicked="#AOButtonClicked" onMouseEntered="#onAOButtonMM" onMouseExited="#onAOButtonME" prefHeight="44.0" prefWidth="217.0" style="-fx-background-color: #FFFFFF;" text="All Orders" textFill="#212121">
                <font>
                   <Font name="Franklin Gothic Medium Italic" size="17.0" />
                </font>
@@ -61,13 +56,10 @@
         </AnchorPane>
     </left>
    <center>
-        <AnchorPane prefHeight="600.0" prefWidth="598.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
-         <children>
-            <ImageView fitHeight="577.0" fitWidth="787.0" layoutX="25.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Pictures/AdminIllus.png" />
-               </image>
-            </ImageView>
-         </children></AnchorPane>
+      <ImageView fitHeight="517.0" fitWidth="818.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../Pictures/AdminIllus.png" />
+         </image>
+      </ImageView>
    </center>
 </BorderPane>

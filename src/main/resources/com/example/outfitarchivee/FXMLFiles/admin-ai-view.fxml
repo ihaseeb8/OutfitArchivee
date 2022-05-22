@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.outfitarchivee.Controllers.AdminAIViewController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="PhoneNoField" editable="false" layoutX="184.0" layoutY="252.0" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #212121; -fx-text-fill: #FFFFFF;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="EmailField" editable="false" layoutX="184.0" layoutY="183.0" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #212121; -fx-text-fill: #FFFFFF;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="NameField" editable="false" layoutX="185.0" layoutY="112.0" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #212121; -fx-text-fill: #FFFFFF;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="38.0" fitWidth="35.0" layoutX="123.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="35.0" layoutX="123.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/email.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="35.0" layoutX="123.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/smartphone.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="201.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Account Details" textAlignment="CENTER" wrappingWidth="195.34857177734375">
+               <font>
+                  <Font name="Century Gothic Bold Italic" size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -8,29 +8,58 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.outfitarchivee.Controllers.UserShopViewController">
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.outfitarchivee.Controllers.UserShopViewController">
     <left>
-        <AnchorPane prefHeight="600.0" prefWidth="257.0" style="-fx-background-color: #212121;" BorderPane.alignment="CENTER">
+        <AnchorPane prefHeight="600.0" prefWidth="223.0" style="-fx-background-color: #212121;" BorderPane.alignment="CENTER">
             <children>
-                <Button fx:id="BackButton" layoutX="77.0" layoutY="455.0" mnemonicParsing="false" onMouseClicked="#onBackButtonClicked" onMouseEntered="#onBackButtonMM" onMouseExited="#onBackButtonME" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #FFFFFF;" text="Back" textFill="#212121">
+                <Text fill="WHITE" fontSmoothingType="LCD" layoutX="17.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To Our Shop!" wrappingWidth="188.09918212890625">
                     <font>
-                        <Font name="Franklin Gothic Medium Italic" size="17.0" />
-                    </font>
-                </Button>
-                <ImageView fitHeight="206.0" fitWidth="189.0" layoutX="44.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../Pictures/logowhite.png" />
-                    </image>
-                </ImageView>
-                <Text fill="WHITE" fontSmoothingType="LCD" layoutX="69.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To Our Shop!" wrappingWidth="147.2991943359375">
-                    <font>
-                        <Font name="Segoe Script" size="22.0" />
+                        <Font name="Segoe Script" size="15.0" />
                     </font>
                 </Text>
+            <Button fx:id="AIButton" layoutX="2.0" layoutY="173.0" mnemonicParsing="false" onMouseClicked="#AIButtonClicked" onMouseEntered="#onAIButtonMM" onMouseExited="#onAIButtonME" prefHeight="44.0" prefWidth="217.0" style="-fx-background-color: #FFFFFF;" text="Account Information" textFill="#212121">
+               <font>
+                  <Font name="Franklin Gothic Medium Italic" size="17.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="206.0" fitWidth="189.0" layoutX="17.0" layoutY="-31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/logowhite.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="LOButton" layoutX="2.0" layoutY="484.0" mnemonicParsing="false" onMouseClicked="#LOButtonClicked" onMouseEntered="#onLOButtonMM" onMouseExited="#onLOButtonME" prefHeight="44.0" prefWidth="217.0" style="-fx-background-color: #FFFFFF;" text="Log Out" textFill="#212121">
+               <font>
+                  <Font name="Franklin Gothic Medium Italic" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="SIButton" layoutX="2.0" layoutY="237.0" mnemonicParsing="false" onMouseClicked="#SIButtonClicked" onMouseEntered="#onSIButtonMM" onMouseExited="#onSIButtonME" prefHeight="44.0" prefWidth="217.0" style="-fx-background-color: #FFFFFF;" text="Shop Items" textFill="#212121">
+               <font>
+                  <Font name="Franklin Gothic Medium Italic" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="SCButton" layoutX="2.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#SCButtonClicked" onMouseEntered="#onSCButtonMM" onMouseExited="#onSCButtonME" prefHeight="44.0" prefWidth="217.0" style="-fx-background-color: #FFFFFF;" text="Shopping Cart" textFill="#212121">
+               <font>
+                  <Font name="Franklin Gothic Medium Italic" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="MOButton" layoutX="2.0" layoutY="362.0" mnemonicParsing="false" onMouseClicked="#MOButtonClicked" onMouseEntered="#onMOButtonMM" onMouseExited="#onMOButtonME" prefHeight="44.0" prefWidth="217.0" style="-fx-background-color: #FFFFFF;" text="Confirm Placed Orders" textFill="#212121">
+               <font>
+                  <Font name="Franklin Gothic Medium Italic" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="PODButton" layoutX="2.0" layoutY="423.0" mnemonicParsing="false" onMouseClicked="#PODButtonClicked" onMouseEntered="#onPODButtonMM" onMouseExited="#onPODButtonME" prefHeight="44.0" prefWidth="217.0" style="-fx-background-color: #FFFFFF;" text="Placed Orders Details" textFill="#212121">
+               <font>
+                  <Font name="Franklin Gothic Medium Italic" size="17.0" />
+               </font>
+            </Button>
             </children>
         </AnchorPane>
     </left>
-   <right>
-        <AnchorPane prefHeight="600.0" prefWidth="611.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER" />
-   </right>
+   <center>
+      <ImageView fitHeight="522.0" fitWidth="952.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../Pictures/usp.png" />
+         </image>
+      </ImageView>
+   </center>
 </BorderPane>

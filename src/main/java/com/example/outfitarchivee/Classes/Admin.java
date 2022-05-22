@@ -40,6 +40,8 @@ public class Admin {
         this.phoneNo = phoneNo;
     }
 
+    public long getPhoneNo(){return this.phoneNo;}
+
     public String getPassword() {
         return password;
     }

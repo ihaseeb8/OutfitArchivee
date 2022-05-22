@@ -6,6 +6,7 @@ import com.example.outfitarchivee.DBHandlers.DBConnection;
 import com.example.outfitarchivee.HelloApplication;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -17,8 +18,10 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class AdminLoginViewController {
+public class AdminLoginViewController implements Initializable {
 
     @FXML
     private Button BackButton;
@@ -131,5 +134,11 @@ public class AdminLoginViewController {
         LoginButton.setStyle("-fx-background-color: #455A64");
     }
 
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        PhoneNoField.setText("03159825999");
+        passwordField.setText("2042");
+    }
 
 }
